@@ -1,0 +1,125 @@
+.hflex-wrapper {
+  display: -webkit-box; 
+  -webkit-box-orient: horizontal;
+  display: -moz-box; 
+  -moz-box-orient: horizontal;
+  display: box; 
+  box-orient: horizontal;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.vflex-wrapper50 {
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  display: -moz-box; 
+  -moz-box-orient: vertical;
+  display: box; 
+  box-orient: vertical;
+  height: 100%; 
+  width: 50%;
+}
+
+.hflex-wrapper > *,
+.vflex-wrapper50 > * {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body, p, li, ul { margin: 0; padding: 0; }
+article, section, footer, header, nav, hgroup {
+  display: block;
+}
+
+.ie article, .ie section, .ie footer, .ie header, .ie nav, .ie hgroup {
+  zoom: 1;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%; 
+  overflow: hidden; 
+}
+
+#schedule > * {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+#tweets { 
+  top: 0; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+}
+
+a {
+  text-decoration: none;
+  border: 0;
+}
+
+img.pic {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+
+#tweets { font-size: 0.9em; }
+#tweets p { margin: 14px;}
+#tweets a:hover, #tweets a:active, #tweets a:focus, #tweets a { text-decoration: none; }
+#tweets a:hover { text-decoration: underline; }
+#tweets a img { border: 0; }
+#tweets li { padding: 0; margin: 0; list-style: none; margin: 10px; border-radius: 3px; }
+.tweet { clear: left; min-height: 48px; padding: 9px; line-height: 1; position: relative; }
+#tweets li.searchterm { font-size: 22px; padding: 20px 0; }
+.vcard { margin-top: 0px; float: left;}
+.hentry { margin-left: 58px; }
+.hentry .meta { font-size: 0.764em; margin: 3px 0 0; display: block; }
+#tweets { background-repeat: no-repeat; background-position: -200px 250px; }
+
+#schedule > div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#notices > div {
+  display: none;
+  z-index: 1;
+}
+
+#notices > div.show {
+  opacity: 1;
+  display: block;
+}
+
+#notices .fullscreen {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transform: translateZ(0);
+  -moz-transition: all 100ms ease-in-out;
+  -o-transform: translateZ(0);
+  -o-transition: all 100ms ease-in-out;
+  -ms-transform: translateZ(0);
+  -ms-transition: all 100ms ease-in-out;
+  transform: translateZ(0);
+  transition: all 100ms ease-in-out;
+  display: block !important;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

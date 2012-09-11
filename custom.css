@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Cabin Sketch';
+    src: url('fonts/cabinsketch-bold-webfont.eot');
+    src: url('fonts/cabinsketch-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabinsketch-bold-webfont.woff') format('woff'),
+         url('fonts/cabinsketch-bold-webfont.ttf') format('truetype'),
+         url('fonts/cabinsketch-bold-webfont.svg#CabinSketchBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC);
+  background-position: center -100px; /* 71px */
+  background-repeat: repeat, no-repeat;
+  background-color: #008999;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+  color: #93cfd6;
+  font-size: 24px; 
+}
+
+#schedule div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255,255,255,0.6);
+
+  padding: 20px;
+}
+
+#schedule div > * {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.1em;
+}
+
+#schedule { 
+  color: #000; 
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+#schedule a {
+  color: rgba(0,0,0,0.7);
+}
+
+#schedule h3 {
+  padding-top: 0px;
+  font-size: 54px;
+  clear: right;
+}
+
+#schedule h2 {
+  line-height: 48px;
+  font-size: 34px;
+}
+
+#schedule > * {
+  text-shadow: 0px 1px 1px #fff;
+}
+
+#schedule img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  z-index: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* twitter colours */
+#tweets a { color: rgba(255,255,255,0.7); }
+.hentry .meta, #tweets .meta a { color: #99CFD7; }
+#tweets li { background: rgba(255, 255, 255, 0.2); }
+.tweet { color: #fff; }
+
+/* this simply puts a large background image on the schedule element if it matches the schedule time */
+#schedule[data-time="0940"] {
+  background-image: url(/images/sample/remy.jpg);
+}
+#schedule[data-time="0950"] {
+  background-image: url(/images/sample/jeremy.jpg);
+}
+#schedule[data-time="1030"] {
+  background-image: url(/images/sample/phil.jpg);
+}
+#schedule[data-time="1110"] {
+  background-image: url(/images/sample/break1.jpg);
+}
+#schedule[data-time="1140"] {
+  background-image: url(/images/sample/marijn.jpg);
+}
+#schedule[data-time="1220"] {
+  background-image: url(/images/sample/rik.jpg);
+}
+#schedule[data-time="1430"] {
+  background-image: url(/images/sample/nicholas.jpg);
+}
+#schedule[data-time="1510"] {
+  background-image: url(/images/sample/glenn.jpg);
+}
+#schedule[data-time="1550"] {
+  background-image: url(/images/samplebreak2.jpg);
+}
+#schedule[data-time="1620"] {
+  background-image: url(/images/sample/brendan.jpg);
+}
+#schedule[data-time="1700"] {
+  background-image: url(/images/sample/marcin.jpg);
+}
+#schedule[data-time="1900"] {
+  background-image: url(/images/sample/closing.jpg); 
+}
+
+/* this allows us to customise what part is animated to fullscreen */
+#notices .fullscreen {
+  top: 100%;
+  background: white;
+}
+
+/* this third notice will slide upwards as it also has .fullscreen */
+#notice3.show {
+  top: 0;
+}
